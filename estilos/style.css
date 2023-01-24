@@ -1,0 +1,71 @@
+/*Configurações mobile*/
+
+@media screen and (min-width: 320px) and (max-width: 800px){
+
+    section#perfil{
+        padding: 12%;
+    } 
+}
+
+/*Configurações gerais*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor1:#28104E;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: end;
+    background-color: var(--cor1);
+    max-width: 100%;
+    padding: 2%;
+
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-color: #181818;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+section#perfil{
+    border-radius: 20px;
+    width: 40%;
+    background-color: var(--cor1);
+    margin: auto;
+    margin-top: 5%;
+}
+
+#perfil-photo img{
+
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+
+    max-width: 100%;
+    min-width: 30%;
+    
+}
