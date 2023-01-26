@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-padrão);
+}
+
+:root{
+    --font-padrão: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: purple;
+}
+
+main h1{
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background-color: #181818;
+    color: white;
+}
+
+.cards{
+    width: 50%;
+}
+
+#telas-login{
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 60vw;
+    border-radius: 15px;
+
+    background: url(../images/telalogin.jpg) no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    
+    position: absolute;
+    top: 25%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    
+}
+
+#sites-parallax{
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 60vw;
+    border-radius: 15px;
+
+    background: url(../images/blackhole.jpg) no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#sites-projetos{
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 60vw;
+    border-radius: 15px;
+
+    background: url(../images/projects.jpg) no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 780px) and (max-width: 992px) {
+    
+    
+
+}
