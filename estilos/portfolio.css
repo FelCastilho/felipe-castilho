@@ -15,31 +15,17 @@
 
 header{
     background-color: #28104E;
-    
     border-bottom: 1px solid white;
     
 }
 
 header > h1{
+    padding-top: 20px;
     text-align: center;
     color: white;
+    max-width: 100%;
     
 }
-
-span#burguer{
-    margin-top: 10px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-span#burguer:hover{
-    color: black;
-    background-color: white;
-}
-
 menu{
    
     display: none;
@@ -63,6 +49,20 @@ menu > ul > li > a:hover{
     background-color: grey;
 }
 
+span#burguer{
+    margin-top: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    color: black;
+    background-color: white;
+}
+
 body, html{
    background-color:  #181818;
 }
@@ -79,16 +79,21 @@ main > h1{
 }
 
 img{
+
     border-radius: 15px;
+    box-shadow: 1px 2px 2px black;
+    border: 1px solid white;
+    max-width: 85%;
+    min-width: 360px;
 }
 .cards{
-
+    
     /*Animação em 3D nos cards*/
     perspective: 900px;
     
     /*Responsividade e posição*/
-    max-width: 80%;
-    min-width: 400px;
+    max-width: 85%;
+    min-width: 360px;
 
     position: absolute;
     top: 90%;
@@ -103,6 +108,8 @@ img{
 #telas-login{
     margin-top: 50px ;
     margin-bottom: 50px ;
+    
+
 }
 
 #sites-parallax{
