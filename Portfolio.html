@@ -7,17 +7,25 @@
 
     <!--Links Externos-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/portfolio.css">
     <link rel="stylesheet" href="estilos/portfolio-media-query.css">
     
-    <title>Portfólio</title>
+    <title>Portfólio - Felipe Coutinho</title>
 </head>
-<body> 
+
+<body onresize="mudouTamanho()"> 
     <header>
-        
-        <menu>
-            <a href="index.html">Home</a>
-            <a href="#">Currículo</a>
+
+        <h1>Felipe Castilho</h1>
+
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+            </ul>
         </menu>
 
     </header>
@@ -31,21 +39,28 @@
 
 
                     <figcaption class="card-3d">
+
                         <a href="#">
-                            <div id="telas-login">
-                                <img src="images/formularios.png" alt="Telas de login">
+
+                            <div class="telas">
+                                <div id="telas-login">
+                                
+                                    <img src="images/formularios.png" alt="Telas de login">
+                                </div>
                             </div>
+
                         </a>
+
                     </figcaption>
 
                     <figcaption class="card-3d">
 
                         <a href="#">
 
-                            <div id="sites-parallax">
-
-                                <img src="images/parallax.png" alt="Parallax">
-
+                            <div class="telas">
+                                <div id="sites-parallax">
+                                    <img src="images/parallax.png" alt="Parallax">
+                                </div>
                             </div>
 
                         </a>
@@ -54,18 +69,40 @@
                     
                      <figcaption class="card-3d">
                         <a href="#">
-                            <div id="sites-projetos" >
-                                <img src="images/projects.png" alt="">
+
+                            <div class="telas">
+
+                                <div id="sites-projetos" >
+                                    <img src="images/projects.png" alt="Projetos">
+                                </div>
+
                             </div>
                         </a>
                      </figcaption>
-                    
-
 
             </div>
 
 
         </section>
     </main>
+    <script>
+
+        function mudouTamanho(){
+        if(window.innerWidth >= 768){
+            itens.style.display = 'block'
+        }else{
+            itens.style.display = 'none'
+        }
+       }
+
+       function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+       }
+       
+    </script>
 </body>
 </html>

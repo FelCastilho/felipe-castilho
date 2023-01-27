@@ -1,19 +1,74 @@
+@charset 'UTF-8';
+
 /*TABLETS*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    header{
-        background-color: red;
+
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
     }
 }
 
 
 
 /*Telas grandes*/
+
 @media screen and (min-width: 992px) {
-    
-    menu > a:hover {
+
+    /*Configurando as imagens*/
+
+    .cards{
+        display: flex;
+        padding: 6%;
+        margin-left: -80px;
+    }
+
+    #telas-login{
+        margin: 0;
+        
+        padding: 20px;
         
     }
+
+    #sites-parallax{
+        margin: 0;
+        padding: 20px;
+    }
+
+    #sites-projetos{
+        margin: 0;
+        padding: 20px;
+    }
+
+    header > h1{
+        padding-top: 20px;
+    }
+
+    /*Menu Hamburguer*/
+
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        margin: 20px;
+        text-align: center;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+        
+    }
+    
     /*Animação em telas grandes usando figcaption*/
     .card-3d{
         position: relative;
