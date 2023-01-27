@@ -1,40 +1,17 @@
-@charset 'UTF-8';
-
-/*Media para telas de tablet */
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    
-    header{
-        padding: 1%;
-    }
-
-    main  h1{
-        margin-bottom: 20px;
-    }
-    
-}
-
-/*Media para telas grandes*/
 @media screen and (min-width: 992px) {
+    
+    
 
-    header{
-        padding: 1%;
-    }
 
-    main{
+    /*Animação em telas grandes usando figcaption*/
+    .card-3d{
         position: relative;
+        transform-style: preserve-3d;
+        will-change: transform;
+        transition: transform 1s;
     }
-    
-    #telas-login{
+     
+    .card-3d:hover{
+        transform: translateZ(50px);
     }
-
-    #parallax{
-      
-    }
-    
-    #sites-projetos{
-
-    }
-    
-
 }
