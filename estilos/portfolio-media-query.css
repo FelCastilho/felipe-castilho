@@ -1,8 +1,19 @@
+/*TABLETS*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        background-color: red;
+    }
+}
+
+
+
+/*Telas grandes*/
 @media screen and (min-width: 992px) {
     
-    
-
-
+    menu > a:hover {
+        
+    }
     /*Animação em telas grandes usando figcaption*/
     .card-3d{
         position: relative;

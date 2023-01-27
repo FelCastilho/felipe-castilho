@@ -21,7 +21,9 @@ header{
 
 header > menu > a{
     color: white;
-   
+    text-decoration: none;
+    display: inline;
+    flex-direction: row; 
 }
 body, html{
    background-color:  #181818;
@@ -38,14 +40,11 @@ main > h1{
     
 }
 
-div > p{
-    text-align: center;
-    line-height: 200px;
-    visibility: hidden;
+img{
+    border-radius: 15px;
 }
-
 .cards{
-    perspective: 900px;
+    
     /*Responsividade e posição*/
     max-width: 80%;
     min-width: 400px;
@@ -54,43 +53,25 @@ div > p{
     top: 90%;
     left: 50%;
 
+    /*Animação em 3D nos cards*/
+    perspective: 900px;
     transform: translate(-50%, -1%);
-}
 
+}
 
 
 #telas-login{
     margin-top: 50px ;
     margin-bottom: 50px ;
-    border-radius: 20px;
-
-    background: url(../images/formularios.jpg);
-    background-position: center;
-    
-}
-
-#tela-login:hover{
-    transform: translate(10px) rotateX(20deg) rotateY(30deg);
-    transform: translateZ(50px);
 }
 
 #sites-parallax{
-    margin-bottom: 50px ;
-    border-radius: 20px;
-
-    background: url(../images/parallax.jpg) no-repeat;
-    background-position: center;
-
+    margin-bottom: 50px ;  
 
 }
 
 #sites-projetos{
-    
     margin-bottom: 50px ;
-    border-radius: 20px;
-
-    background: url(../images/projects.jpg) no-repeat;
-    background-position: center;
-
+    
 }
 
