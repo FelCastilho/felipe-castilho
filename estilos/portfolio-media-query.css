@@ -21,4 +21,21 @@
         padding: 1%;
     }
 
+    #dev-web{
+        display: flex;
+        flex-direction: row;
+    }
+    #telas-login{
+        width: 100%;
+    }
+
+    #parallax{
+
+    }
+    
+    #sites-projetos{
+
+    }
+    
+
 }

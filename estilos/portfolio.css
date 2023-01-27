@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+
     font-family: var(--font-padrão);
 }
 
@@ -17,78 +18,63 @@ header{
     padding: 2%;
 }
 
-main h1{
-    padding-top: 20px;
-    text-align: center;
+body, html{
+   background-color:  #181818;
+}
+
+main{
     position: relative;
-    height: 100vh;
-    background-color: #181818;
+}
+
+main > h1{
+    margin-top: 30px ;
     color: white;
+    text-align: center;
+}
+
+div > p{
+    text-align: center;
+    line-height: 200px;
 }
 
 .cards{
-    width: 50%;
+    /*Responsividade e posição*/
+    max-width: 80%;
+    min-width: 400px;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+
+    transform: translate(-50%, -1%);
 }
 
 #telas-login{
-    margin-top: 20px;
-    height: 25vh;
-    width: 60vw;
-    border-radius: 15px;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+    border-radius: 20px;
 
     background: url(../images/telalogin.jpg) no-repeat;
     background-position: center;
-    color: white;
-    text-align: center;
-    line-height: 200px;
-    
-    position: absolute;
-    top: 25%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
     
 }
 
 #sites-parallax{
-
-    height: 25vh;
-    width: 60vw;
-    border-radius: 15px;
+    margin-bottom: 50px ;
+    border-radius: 20px;
 
     background: url(../images/blackhole.jpg) no-repeat;
     background-position: center;
-    color: white;
-    text-align: center;
-    line-height: 200px;
 
-    position: absolute;
-    top: 55%;
-    left: 50%;
 
-    transform: translate(-50%, -50%);
 }
 
 #sites-projetos{
-    height: 25vh;
-    width: 60vw;
-    border-radius: 15px;
+    margin-bottom: 50px ;
+    border-radius: 20px;
 
     background: url(../images/projects.jpg) no-repeat;
     background-position: center;
-    color: white;
-    text-align: center;
-    line-height: 200px;
-
-    position: absolute;
-    top: 85%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 780px) and (max-width: 992px) {
-    
-    
 
 }
+
