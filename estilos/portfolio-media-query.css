@@ -21,16 +21,15 @@
         padding: 1%;
     }
 
-    #dev-web{
-        display: flex;
-        flex-direction: row;
+    main{
+        position: relative;
     }
+    
     #telas-login{
-        width: 100%;
     }
 
     #parallax{
-
+      
     }
     
     #sites-projetos{
