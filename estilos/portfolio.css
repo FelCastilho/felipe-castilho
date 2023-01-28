@@ -46,7 +46,8 @@ menu > ul > li > a{
 }
 
 menu > ul > li > a:hover{
-    background-color: grey;
+    background-color: white;
+    color: #28104E;
 }
 
 span#burguer{
