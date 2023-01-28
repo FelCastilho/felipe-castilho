@@ -25,9 +25,16 @@
 
     /*Configurando as imagens*/
 
+    img{
+        display: block;
+        margin: auto;
+        
+        max-width: 100%;
+    }
     .cards{
         display: flex;
         padding: 6%;
+        max-width: 100%;
     }
 
     #telas-login{
