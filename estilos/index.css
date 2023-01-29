@@ -1,4 +1,4 @@
-
+@charset 'UTF-8';
 
 /*Configurações gerais*/
 
@@ -28,21 +28,13 @@ body{
     background-color: #181818;
 }
 
-h1{
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-}
 
-p{
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-}
+/* #region Configurações box do perfil*/
 
 section#perfil{
     border-radius: 20px;
-    width: 40%;
+    border: 2px solid white;
+    width: 75%;
     background-color: var(--cor1);
     margin: auto;
     margin-top: 5%;
@@ -54,16 +46,75 @@ section#perfil{
     margin: auto;
     padding-top: 20px;
 
-    max-width: 100%;
+    max-width: 80%;
     min-width: 30%;
     
 }
 
-/*Configurações mobile*/
+/* #endregion */
 
-@media screen and (max-width: 750px) {
+h1{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
 
+h2{
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/*Area de redes sociais*/
+
+#redes{
+    background-color: black;
+    padding-top: 5px;
+    border-radius: 0px 0px 20px 20px; 
+    border-top: 1px solid white;
+}
+
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+ul > li > a{
+    padding: 15px;
+    
+}
+
+/*Para tablets*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     section#perfil{
-        padding: 6%;
+        width: 55%;
     }
+}
+
+/*Para telas grandes*/
+
+@media screen and (min-width: 992px) {
+    section#perfil{
+        width: 30%;
+    }
+
+    ul > li > a{
+        padding: 25px;
+        
+    }
+
 }
