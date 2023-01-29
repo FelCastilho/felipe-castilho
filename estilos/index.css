@@ -92,8 +92,20 @@ ul{
     padding-bottom: 20px;
     
 }
-ul > li > a{
+ ul > figcaption > li > a{
     padding: 15px;
+    
+}
+
+/*Seta para baixo*/
+
+#arrow{
+    /*Centralizando*/
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+
+    width: 12%;
     
 }
 
@@ -112,9 +124,25 @@ ul > li > a{
         width: 30%;
     }
 
-    ul > li > a{
+    ul{
+        perspective: 900px;
+    }
+
+    ul > figcaption > li > a{
         padding: 25px;
         
+    }
+    /*Animação nas redes sociais*/
+
+    .card-3d{
+        position: relative;
+        transform-style: preserve-3d;
+        will-change: transform;
+        transition: transform 0.6s;
+    }
+
+    .card-3d:hover{
+        transform: translateZ(70px);
     }
 
 }

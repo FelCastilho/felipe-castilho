@@ -27,7 +27,6 @@ header > h1{
     
 }
 menu{
-   
     display: none;
 }
 
@@ -37,6 +36,8 @@ menu > ul{
 }
 
 menu > ul > li > a{
+   
+    border-top: 1px solid white;
     text-align: center;
     display: block;
     padding: 10px;
@@ -45,11 +46,13 @@ menu > ul > li > a{
     color: white;
 }
 
+/*Efeito Hover no menu*/
 menu > ul > li > a:hover{
     background-color: white;
     color: #28104E;
 }
 
+/*Modelo Hamburguer nos dispositivos mobile*/
 span#burguer{
     margin-top: 10px;
     display: block;
@@ -80,7 +83,6 @@ main > h1{
 }
 
 img{
-    
     display: block;
     margin: auto;
     
@@ -93,6 +95,13 @@ img{
 
     
 }
+
+/*Mini animação nas imagens mobile*/
+
+img:hover{
+    transition-duration: 1s;
+}
+
 .cards{
     display: block;
     margin: auto;

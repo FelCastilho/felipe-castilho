@@ -97,10 +97,24 @@
        }
 
        function clickMenu(){
+
+        var burguer = document.getElementById('burguer') // var simbolo hamburguer 
+
             if(itens.style.display == 'block'){
                 itens.style.display = 'none'
+
+                //Mudando a cor do burguer (1)
+                burguer.style.background = '#28104E'
+                burguer.style.color = 'white'
+                
+                
             }else{
                 itens.style.display = 'block'
+
+                //Mudando a cor do burguer (2)
+                burguer.style.background = 'white'
+                burguer.style.color = '#28104E'
+                
             }
        }
        

@@ -73,6 +73,10 @@
         display: inline-block;
         
     }
+
+    menu > ul > li > a{
+        border: none;
+    }
     
     /*Animação em telas grandes usando figcaption*/
     .card-3d{
