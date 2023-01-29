@@ -1,4 +1,4 @@
-/*Mobioe first*/
+/*Mobile first*/
 
 @charset 'UTF-8';
 
@@ -153,6 +153,11 @@ form > a.botao:hover{
 
 form > a.botao > span{
     font-size: 0.8em;
+}
+
+section > h2{
+    text-align: center;
+    font-size: 0.9em;
 }
 
 /*MEDIA QUERYS*/
