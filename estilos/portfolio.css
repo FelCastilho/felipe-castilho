@@ -113,7 +113,8 @@ img:hover{
    
     /*Animação em 3D nos cards*/
     perspective: 900px;
-    
+
+       
 
 }
 
@@ -121,15 +122,24 @@ img:hover{
 #telas-login{
     margin-top: 50px ;
     margin-bottom: 50px ;
+
+    /*Scroll Reveal*/
+    visibility: hidden; 
 }
 
 #sites-parallax{
     margin-bottom: 50px ;  
 
+    /*Scroll Reveal*/
+    visibility: hidden; 
+
 }
 
 #sites-projetos{
     margin-bottom: 50px ;
+    
+    /*Scroll Reveal*/
+    visibility: hidden; 
     
 }
 

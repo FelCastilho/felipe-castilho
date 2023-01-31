@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Links Externos-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/portfolio.css">
@@ -86,7 +87,7 @@
         </section>
     </main>
     
-    <script>
+    <script>  
 
         function mudouTamanho(){
         if(window.innerWidth >= 768){
@@ -117,7 +118,25 @@
                 
             }
        }
+
+       //Criando Scroll Reveal
        
+       window.sr = ScrollReveal({reset: true})
+
+       sr.reveal('#telas-login', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 1500,
+       })
+
+       sr.reveal('#sites-parallax', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 2000,
+       })
+       
+       sr.reveal('#sites-projetos', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 3000,
+       })
     </script>
 </body>
 </html>
