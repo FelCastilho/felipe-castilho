@@ -11,6 +11,8 @@
 
 :root{
     --font-padrão: 'Montserrat', sans-serif;
+
+    --cor2:#064680;
 }
 
 header{
@@ -112,16 +114,6 @@ img:hover{
     /*Animação em 3D nos cards*/
     perspective: 900px;
     
-    /*Responsividade e posição
-    max-width: 85%;
-    min-width: 360px;
-
-    position: absolute;
-    top: 90%;
-    left: 50%;
-
-    
-    transform: translate(-50%, -1%);*/
 
 }
 
