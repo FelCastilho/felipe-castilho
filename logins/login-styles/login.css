@@ -23,7 +23,8 @@
     --cor3: #181818;
 }
 
-h1{
+header > h1{
+    font-size: 1.3em;
     text-align: center;
     color: white;
     margin-top: 20px;

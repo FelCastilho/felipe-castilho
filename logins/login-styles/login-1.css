@@ -53,11 +53,13 @@ section#login{
 }
 
 section#login > div#image{
+
     display: block;
     background: url(../login-images/login1/computer-pq.jpg) no-repeat;
     height:250px;
     background-image: cover;
     background-position: center;
+    
 }
 
 section#login > div#form{
