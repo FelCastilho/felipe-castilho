@@ -6,30 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Links externos-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="login-styles/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>Formulários</title>
 </head>
-<body>
-    <header>
-        <h1>Modelos de formulários:</h1>
-    </header>
+
+<header>
+    <a href="index.html">Felipe Castilho</a>
+    
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+        </ul>
+    </menu>
+
+</header>
+
+<body onresize="mudouTamanho()">     
 
     <main>
+
+        <h1>Modelos de Formulários</h1>
         <div class="cards">
 
             <figcaption class="card-3d">
-                <a href="login1.html" target="_blank">
-                    <img src="../images/imagens-login/modelo-1-login.jpg" alt="Modelo de login 1">
-                </a>
+                    <a href="login1.html" target="_blank">
+
+                        <div id="login-01"><img src="../images/imagens-login/modelo-1-login.jpg" alt="Modelo de login 1"></div>
+
+                    </a>
             </figcaption>
 
             <figcaption class="card-3d">
-                <a href="login2.html">
-                    <img src="../images/imagens-login/modelo-2-login.jpg" alt="Modelo de login 2">
-                </a>
+                    <a href="login2.html">
+
+                        <div id="login-02"><img src="../images/imagens-login/modelo-2-login.jpg" alt="Modelo de login 2"></div>
+                        
+                    </a>
+ 
             </figcaption>
         </div>
+
     </main>
+    
+    <script>  
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+
+            var burguer = document.getElementById('burguer') // var simbolo hamburguer 
+
+                if(itens.style.display == 'block'){
+                    itens.style.display = 'none'
+
+                    //Mudando a cor do burguer (1)
+                    burguer.style.background = '#28104E'
+                    burguer.style.color = 'white'
+                    
+                    
+                }else{
+                    itens.style.display = 'block'
+
+                    //Mudando a cor do burguer (2)
+                    burguer.style.background = 'white'
+                    burguer.style.color = '#28104E'
+                    
+                }
+       }
+
+       //Criando Scroll Reveal
+       
+       window.sr = ScrollReveal({reset: true})
+
+       sr.reveal('#tela-login01', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 1500,
+       })
+
+       sr.reveal('#tela-login02', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 2000,
+       })
+       
+       sr.reveal('#sites-projetos', {
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 3000,
+       })
+    </script>
 </body>
 </html>
