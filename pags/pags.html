@@ -8,8 +8,8 @@
     <!--Links Externos-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="stylesheet" href="parallax-styles/parallax.css">
-    <link rel="shortcut icon" href="parallax-images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pags.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <title>Páginas Parallax</title>
 </head>
 <header>
@@ -19,7 +19,7 @@
 
     <menu id="itens">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../portfolio.html">Portfólio</a></li>
             <li><a href="curriculo.html">Currículo</a></li>
         </ul>
     </menu>
@@ -30,25 +30,29 @@
 
     <main>
 
-        <h1>Páginas com efeito Parallax</h1>
-        <div class="cards">
+        <section id="normal-pages">
 
-            <figcaption class="card-3d">
-                    <a href="login1.html" target="_blank">
+            <h1>Páginas com HTML5 / CSS3</h1>
+            <div class="cards">
+                <figcaption class="card-3d">
+                        <a href="pag1.html" target="_blank">
+                            <div id="parallax-01"><img src="../images/imagens-login/modelo-1-login.jpg" alt="Modelo de Parallax 1"></div>
+                        </a>
+                </figcaption>
+                <figcaption class="card-3d">
+                        <a href="pag2.html">
+                            <div id="parallax-02"><img src="../images/imagens-login/modelo-2-login.jpg" alt="Modelo de Parallax 2"></div>
+            
+                        </a>
+                </figcaption>
 
-                        <div id="parallax-01"><img src="../images/imagens-login/modelo-1-login.jpg" alt="Modelo de Parallax 1"></div>
+        </section>
 
-                    </a>
-            </figcaption>
+        <section id="parallax-pages">
+            <h1>Páginas com efeito Parallax</h1>
 
-            <figcaption class="card-3d">
-                    <a href="login2.html">
 
-                        <div id="parallax-02"><img src="../images/imagens-login/modelo-2-login.jpg" alt="Modelo de Parallax 2"></div>
-                        
-                    </a>
- 
-            </figcaption>
+        </section>
         </div>
 
     </main>

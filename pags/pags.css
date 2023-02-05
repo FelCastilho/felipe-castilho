@@ -98,7 +98,7 @@ body{
     background-color: #181818;
 }
 
-main > h1{
+section > h1{
     font-size: 1.8em;
     text-align: center;
     margin-top: 60px;
