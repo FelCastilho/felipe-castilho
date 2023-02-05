@@ -12,18 +12,13 @@
 :root{
     --font-padrão: 'Montserrat', sans-serif;
 
-    --cor2:#064680;
-}
-
-:root{
-    --font-padrão: 'Montserrat', sans-serif;
-
     --cor1:#28104E;
     --cor2:#064680;
     --cor3: #181818;
 }
 
 /*Configurações header Mobile*/
+
 header{
     background-color: #28104E;
     border-bottom: 1px solid white;
@@ -98,7 +93,7 @@ body{
     background-color: #181818;
 }
 
-section > h1{
+h1{
     font-size: 1.8em;
     text-align: center;
     margin-top: 60px;
@@ -126,7 +121,7 @@ img{
     display: block;
     margin: auto;
     
-    max-width: 90%;
+    max-width: 80%;
     min-width: 30%;
 
     border-radius: 15px;
@@ -169,10 +164,10 @@ img{
         display: flex;
         padding: 0 6%; /*Aplicando a distancia */
         margin-left: 30px;
-
     }
  
     /*Animação em telas grandes usando figcaption*/
+
     .card-3d{
         position: relative;
         transform-style: preserve-3d;

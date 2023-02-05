@@ -60,6 +60,7 @@ menu > ul > li > a{
     text-decoration: none;
     text-align: center;
     color: white;
+    font-size: 1.2em;
 }
 
 /*Efeito Hover no menu*/
@@ -67,6 +68,7 @@ menu > ul > li > a{
 menu > ul > li > a:hover{
     background-color: white;
     color: #28104E;
+    
 }
 
 /*Modelo Hamburguer nos dispositivos mobile*/
@@ -109,9 +111,7 @@ img{
 
     border-radius: 15px;
     box-shadow: 1px 2px 2px black;
-    border: 1px solid white;
-
-    
+    border: 1px solid white;   
 }
 
 /*Mini animação nas imagens mobile*/
@@ -129,7 +129,6 @@ img:hover{
    
     /*Animação em 3D nos cards*/
     perspective: 900px;
-
 }
 
 
