@@ -62,36 +62,23 @@
         display: block;
         margin: auto;
         
+        /*Aplicando distancia entre os cards*/
+        margin-top: 50px;
+        margin-right: 50px;
+        
         max-width: 100%;
     }
     
+
+    /*Configuração cards login*/
     .cards{
         display: flex;
-        padding: 6%;
-        max-width: 100%;
-    }
-
-    #telas-login{
-        margin: 0;
-        padding: 20px;
         
+       
     }
-
-    #sites-parallax{
-        margin: 0;
-        padding: 20px;
-    }
-
-    #sites-projetos{
-        margin: 0;
-        padding: 20px;
-    }
-
-    header > h1{
-        padding-top: 20px;
-    }
-
+ 
     /*Animação em telas grandes usando figcaption*/
+
     .card-3d{
         position: relative;
         transform-style: preserve-3d;

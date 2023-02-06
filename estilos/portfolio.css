@@ -105,6 +105,7 @@ main > h1{
 img{
     display: block;
     margin: auto;
+    margin-top: 50px;
     
     max-width: 80%;
     min-width: 30%;
@@ -112,12 +113,6 @@ img{
     border-radius: 15px;
     box-shadow: 1px 2px 2px black;
     border: 1px solid white;   
-}
-
-/*Mini animação nas imagens mobile*/
-
-img:hover{
-    transition-duration: 1s;
 }
 
 .cards{
