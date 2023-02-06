@@ -112,42 +112,111 @@ img{
 
     border-radius: 15px;
     box-shadow: 1px 2px 2px black;
-    border: 1px solid white;   
+    border: 1px solid white;  
+
 }
 
 .cards{
     display: block;
-    margin: auto;
+    margin: auto;  
     
     max-width: 80%;
     min-width: 30%;
+    
    
     /*Animação em 3D nos cards*/
     perspective: 900px;
 }
 
+/*MEDIA QUERYS*/
 
-#telas-login{
-    margin-top: 50px ;
-    margin-bottom: 50px ;
 
-    /*Scroll Reveal*/
-    visibility: hidden; 
+/*TABLETS*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
 }
 
-#sites-parallax{
-    margin-bottom: 50px ;  
 
-    /*Scroll Reveal*/
-    visibility: hidden; 
 
-}
+/*Telas grandes*/
 
-#sites-projetos{
-    margin-bottom: 50px ;
+@media screen and (min-width: 992px) {
+
+    /*Configurando as imagens*/
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header > img#logo{
+        
+        max-width: 1%;
+        min-width: 8%;
+        border: none;
+        box-shadow: none;
+    }
+
+    /*Menu Hamburguer*/
+
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        margin: 20px;
+        text-align: center;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+        
+    }
+
+    menu > ul > li > a{
+        border: none;
+    }
+
+    img{
+        max-width: 100%;
+    }
     
-    /*Scroll Reveal*/
-    visibility: hidden; 
-    
-}
+    /*Aplicando distancia entre os cards usando div*/
+    .telas{
+        margin: 20px;
+    }
 
+    /*Configuração cards login*/
+    .cards{
+        display: flex; 
+    }
+ 
+    /*Animação em telas grandes usando figcaption*/
+
+    .card-3d{
+        position: relative;
+        transform-style: preserve-3d;
+        will-change: transform;
+        transition: transform 0.6s;
+    }
+     
+    .card-3d:hover{
+        transform: translateZ(50px);
+    }
+
+    main > h1{
+        padding-top: 20px;
+    }
+}

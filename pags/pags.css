@@ -130,6 +130,13 @@ img{
     margin-top: 20px;
     margin-bottom: 50px;
 
+    transition: 0.3s;
+}
+
+/*Opacidade (Animação) Cards (MOBILE)*/
+
+img:hover{
+    opacity: 0.7;
 }
 
 @media screen and (min-width: 992px) {
