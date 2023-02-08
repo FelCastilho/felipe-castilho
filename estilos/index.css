@@ -146,3 +146,16 @@ ul{
     }
 
 }
+
+aside{
+    width: 350px;
+    margin: auto;
+}
+aside > h1{
+    margin-bottom: 50px;
+}
+aside > p{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 30px;
+}

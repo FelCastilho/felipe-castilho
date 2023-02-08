@@ -113,7 +113,12 @@ img{
     border-radius: 15px;
     box-shadow: 1px 2px 2px black;
     border: 1px solid white;  
+    transition: 0.3s;
 
+}
+
+.telas:hover{
+    opacity: 0.7;
 }
 
 .cards{
@@ -168,6 +173,12 @@ img{
         box-shadow: none;
     }
 
+    /*remover o efeito de opacidade em telas grandes*/
+
+    .telas:hover{
+        opacity: unset; 
+    }
+
     /*Menu Hamburguer*/
 
     span#burguer{
@@ -191,13 +202,14 @@ img{
 
     img{
         max-width: 100%;
+        transition: off;
+        
     }
     
     /*Aplicando distancia entre os cards usando div*/
     .telas{
         margin: 20px;
     }
-
     /*Configuração cards login*/
     .cards{
         display: flex; 
