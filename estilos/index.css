@@ -109,6 +109,40 @@ ul{
     
 }
 
+/*Configurando as logos das Tecnologias*/
+
+div.tec-logo{
+    /*Centralizando a div*/
+    width: 300px;
+    display: block;
+    margin: auto;
+    
+}
+
+div.tec-logo > ul > figcaption{
+    /*Centralizando as imagens das logos*/
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.tec-logo > ul{
+    background-color: #28104E;
+    border-radius: 20px;
+    border: 1px solid white;
+    
+    /*Colocando uma em baixo da outra*/  
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*Dando espaço entre as logos*/
+
+div.tec-logo img {  
+    margin-top: 80px;  
+}
+
 /*Para tablets*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
