@@ -64,6 +64,12 @@ article > img{
     min-width: 30%;
 }
 
+.date{
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
 /*Configurando links externos*/
 
 a.externo{
