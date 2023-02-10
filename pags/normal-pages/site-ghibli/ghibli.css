@@ -29,13 +29,11 @@ header > h1{
 /*Conteudo do site*/
 
 article{
-    max-width: 80%;
     margin: auto;
     text-align: justify;
 }
 
 article > h1{
-    background-color: red;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -51,6 +49,7 @@ article > h2{
 
 article > p{
     margin: auto;
+    width: 80%;
     line-height: 2em;
     font-size: 1.1em;
 }
