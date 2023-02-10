@@ -67,10 +67,12 @@ a.externo::after{
 }
 
 article > img{
+    display: block;
+    margin: auto;
     margin-bottom: 50px;
 
     /*Responsividade*/
-    max-width: 100%;
+    max-width: 80%;
     min-width: 30%;
 }
 
@@ -88,6 +90,7 @@ aside > h2{
 }
 
 aside > p{
+    width: 80%;
     line-height: 2em;
     font-size: 1.1em;
 }
