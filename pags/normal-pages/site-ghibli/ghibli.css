@@ -22,6 +22,10 @@ header{
     padding: 30px;
 }
 
+header > h1{
+    font-size: 1.4em;
+}
+
 /*Conteudo do site*/
 
 article{
@@ -37,16 +41,29 @@ article > h1{
 }
 
 article > h2{
+    margin: auto;
+    width: 80%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 article > p{
+    margin: auto;
+    width: 80%;
     line-height: 2em;
     font-size: 1.1em;
 }
 
+article > img{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+
+    /*Responsividade*/
+    max-width: 80%;
+    min-width: 30%;
+}
 
 /*Configurando links externos*/
 
@@ -66,19 +83,11 @@ a.externo::after{
     content: '\1F517';
 }
 
-article > img{
-    display: block;
-    margin: auto;
-    margin-bottom: 50px;
 
-    /*Responsividade*/
-    max-width: 80%;
-    min-width: 30%;
-}
 
 aside{
     margin: auto;
-    width: 400px;
+    width: 80%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
