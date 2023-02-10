@@ -109,6 +109,21 @@ ul{
     
 }
 
+aside{
+    width: 350px;
+    margin: auto;
+}
+
+aside > h1{
+    margin-bottom: 50px;
+}
+
+aside > p{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
 /*Configurando as logos das Tecnologias*/
 
 div.tec-logo{
@@ -154,8 +169,17 @@ div.tec-logo img {
 /*Para telas grandes*/
 
 @media screen and (min-width: 992px) {
+
     section#perfil{
         width: 30%;
+    }
+
+    #arrow{
+        /*Centralizando*/
+        margin-top: 6%;
+        margin-bottom: 6%;
+        width: 6%;
+        
     }
 
     ul{
@@ -166,6 +190,24 @@ div.tec-logo img {
         padding: 25px;
         
     }
+
+    aside{
+        width: 1000px;
+        margin: auto;
+    }
+
+    aside > h1{
+        margin-bottom: 50px;
+    }
+
+    aside > p{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+
     /*Animação nas redes sociais*/
 
     .card-3d{
@@ -181,15 +223,3 @@ div.tec-logo img {
 
 }
 
-aside{
-    width: 350px;
-    margin: auto;
-}
-aside > h1{
-    margin-bottom: 50px;
-}
-aside > p{
-    margin-top: 20px;
-    text-align: justify;
-    line-height: 30px;
-}

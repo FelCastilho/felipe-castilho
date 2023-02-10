@@ -80,9 +80,7 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-a.externo::after{
-    content: '\00a0\1f517';
-}
+
 
 main{
     background-color: white;
@@ -113,6 +111,11 @@ main a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
+
+a.externo::after{
+    content: '\00a0\1f517';
+}
+
 main > img{
     width: 100%;
     text-align: center;
@@ -139,7 +142,7 @@ article > p{
     margin-bottom: 15px;
     text-align: justify;
     text-indent: 30px;
-    line-height: 2em
+    line-height: 2em;
 }
 
 article > h2{

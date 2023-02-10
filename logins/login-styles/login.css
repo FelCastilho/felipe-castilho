@@ -12,18 +12,13 @@
 :root{
     --font-padrão: 'Montserrat', sans-serif;
 
-    --cor2:#064680;
-}
-
-:root{
-    --font-padrão: 'Montserrat', sans-serif;
-
     --cor1:#28104E;
     --cor2:#064680;
     --cor3: #181818;
 }
 
 /*Configurações header Mobile*/
+
 header{
     background-color: #28104E;
     border-bottom: 1px solid white;
@@ -50,6 +45,7 @@ header a{
 header a:hover{
     opacity: 0.7;
 }
+
 menu{
     display: none;
 }
@@ -137,6 +133,15 @@ img{
 
 }
 
+/*Animação dentro das imagens no celular*/
+
+.telas{
+    transition: 0.3;
+}
+.telas:hover{
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 992px) {
 
     header > h1{
@@ -162,6 +167,10 @@ img{
 
     menu > ul > li > a{
         border: none;
+    }
+
+    .telas:hover{
+        opacity: unset; 
     }
 
     /*Configuração cards login*/
