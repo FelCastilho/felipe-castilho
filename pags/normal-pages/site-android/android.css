@@ -132,6 +132,13 @@ main > img{
     min-width: 30%;
 }
 
+#irina{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    min-width: 30%;
+}
+
 h1{
     font-family: var(--fonte-android);
 }
@@ -215,4 +222,13 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
+}
+
+@media screen and (min-width: 992px) {
+    main{
+        width: 900px;
+    }
+    #irina{
+       width: 100vw;
+    }
 }
