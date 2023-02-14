@@ -86,13 +86,13 @@ section.image > p{
 /*Criando efeito Parallax*/
 
 section#img01{
-    background-image: url(../images-cordel/background001.jpg);
+    background-image: url(images-cordel/background001.jpg);
     background-attachment: fixed;
     background-position: right center;
 }
 
 section#img02{
-    background-image: url(../images-cordel/background002.jpg);
+    background-image: url(images-cordel/background002.jpg);
     background-attachment: fixed;
     background-position: right;
 }
