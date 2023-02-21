@@ -59,7 +59,7 @@ section > h2{
 
 div#image{
     display: block;
-    background: url(../login-images/login2/astronaut\ -\ large.jpg) no-repeat;
+    background: url(images/astronaut\ -\ large.jpg) no-repeat;
     display: block;
     height:250px;
     background-image: cover;
@@ -74,6 +74,7 @@ div#image{
 }
 
 .camp > input{
+    padding: 10px;
     border: none;
     border-bottom: 2px solid #181818;
     width: 65%;
@@ -204,7 +205,7 @@ input[type = submit], button{
     div#image{
         float: right;
         border-radius: 0px 20px 20px 0px;
-        background: url(../login-images/login2/astronaut\ -\ large.jpg);
+        background: url(images/astronaut\ -\ large.jpg);
         background-position: bottom center;
         width: 50%;
         height: 100%;

@@ -55,7 +55,7 @@ section#login{
 section#login > div#image{
 
     display: block;
-    background: url(../login-images/login1/computer-pq.jpg) no-repeat;
+    background: url(form1-images/computer-pq.jpg) no-repeat;
     height:250px;
     background-image: cover;
     background-position: center;
@@ -177,7 +177,7 @@ section > h2{
     }
 
     section#login > div#image{
-        background: url(../login-images/login1/computer.jpg);
+        background: url(form1-images/computer.jpg);
         background-position: center;
         background-image: cover;
         float: left;
@@ -208,7 +208,7 @@ section > h2{
     }
 
     section#login > div#image{
-        background: url(../login-images/login1/computer-large.jpg);
+        background: url(form1-images/computer-large.jpg);
         background-position: center;
         float: right;
         width: 50%;
