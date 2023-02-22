@@ -96,7 +96,7 @@ form > p a:hover{
 /*Botões google e facebook*/
 
 form > button{
-    display: inline;
+    display: block;
     flex-direction:row ;
     margin: auto;
     margin-bottom: 20px;
