@@ -12,22 +12,19 @@
     <title>Register - Create account</title>
 </head>
 <body>
-
+    
+    <div id="bg-image">
+        
+    </div>
     <main>
 
-        <section class="login">
+        <section class="register">
 
+            
             <form action="cadastro.php" method="post">
 
                 <h1>Create new account.</h1>
-
-                <p>Already have an account? <a href="login02.html"><strong>Log in</strong></a></p>
-
-                <button> <i class="fa-brands fa-google"></i> Sign up with Google</button>
-                <button> <i class="fa-brands fa-facebook"></i> Sign up with Facebook</button>
-        
-                <p id="or">Or</p>
-        
+      
                 <div class="camp">
                     <label for="iemail"></label>
                     <input type="email" name="iemail" id="iemail" required placeholder="Email Adress">
@@ -45,10 +42,18 @@
                 
                 <div id="checkbox">
                     <label for="icheckbox"></label>
-                    <input type="checkbox" name="icheckbox" id="icheckbox" required> I agree to plataform's terms of service and privace policy
+                    <input type="checkbox" name="icheckbox" id="icheckbox" required> I agree to plataform's terms of service and privace policy.
                 </div>
 
-                <input type="submit" value="Sign Up">
+
+                <button> <i class="fa-brands fa-google"></i> Sign up with Google</button>
+                <button> <i class="fa-brands fa-facebook"></i> Sign up with Facebook</button>
+        
+                
+
+                <input type="submit" value="Register now">
+
+                <p>Already have an account? <a href="login02.html"><strong>Log in</strong></a></p>
 
             </form>
 
