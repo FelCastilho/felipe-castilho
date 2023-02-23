@@ -26,7 +26,7 @@
 
 body{
     height: 100vh;
-    background-color: var(--cor5);
+    background-image: linear-gradient(to bottom, #15273C, #020408) ;
     color: white;
 }
 
@@ -35,7 +35,7 @@ section.register{
     /*Centralizando todos os itens*/
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     left: 50%;
     
     transform: translate(-50%);
@@ -58,6 +58,7 @@ strong{
 form{
     padding: 20px;
     width: 100%;
+    height: 100vw;
 }
 
 div#text{
