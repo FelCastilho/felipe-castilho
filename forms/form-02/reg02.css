@@ -44,9 +44,9 @@ section.register{
 }
 
 img{
-    display: none;
+    display: block;
     margin: auto;
-    max-width: 40%;
+    max-width: 25%;
 }
 
 strong{
@@ -71,14 +71,14 @@ div#text > h1{
     
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.2em;
+    font-size: 1.5em;
 }
 
 
 div#text > p{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 
 div#text > p a{
@@ -95,7 +95,7 @@ div#text > p a:hover{
 .camp > input{
     display: block;
     margin: auto;
-    padding: 20px;
+    padding: 14px;
     margin-bottom: 20px;
     border: none;
     width: 100%;
