@@ -44,9 +44,9 @@ section.register{
 }
 
 img{
-    display: block;
+    display: none;
     margin: auto;
-    max-width: 25%;
+    max-width: 30%;
 }
 
 strong{
@@ -71,14 +71,14 @@ div#text > h1{
     
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 
 div#text > p{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 div#text > p a{
@@ -173,6 +173,12 @@ input[type=submit]:hover{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {   
 
+    img{
+        display: block;
+        margin: auto;
+        max-width: 30%;
+    }
+
     /*Ajustando a altura para tablets*/
 
     section.register{
@@ -191,7 +197,7 @@ input[type=submit]:hover{
 
     .camp > input{
         margin-bottom: 20px;
-        width: 75%;
+        width: 65%;
         border: 1.5px solid white;
     }
 
