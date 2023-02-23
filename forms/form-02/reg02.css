@@ -92,6 +92,7 @@ div#text > p a:hover{
 /*Input Configs*/
 
 .camp > input{
+    
     display: block;
     margin: auto;
     padding: 14px;
@@ -106,7 +107,6 @@ div#text > p a:hover{
     
 }
 
-
 #checkbox{
     width: 100%;
     margin: 30px 10px 30px ;
@@ -115,6 +115,7 @@ div#text > p a:hover{
 /*Botões google e facebook*/
 
 form > button{
+
     display: block;
     flex-direction:row ;
     margin: auto;
@@ -141,6 +142,7 @@ button:hover{
 /*Botão de enviar*/
 
 input[type=submit]{
+    
     background-color: var(--cor3);
     cursor: pointer;
     display: block;
