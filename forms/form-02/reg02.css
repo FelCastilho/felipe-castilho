@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,12 @@
     --cor3: #365475 ;
     --cor4: #15273C;
     --cor5: #020408;
+
+    --font: 'Lexend', sans-serif;
+}
+
+*{
+    font-family: var(--font);
 }
 
 body{
@@ -61,6 +69,7 @@ div#text{
 }
 
 div#text > h1{
+    
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.2em;
@@ -249,6 +258,7 @@ input[type=submit]:hover{
 
     div#text > p a{
         text-decoration: none;
+        color: #020408;
     }
 
     div#text > p a:hover{
@@ -259,11 +269,13 @@ input[type=submit]:hover{
         top: 5%;
         display: block;
         margin: auto;
-        width: 95%;
+        width: 75%;
         height: 90%;
-        border: 1px solid white;
-        border-radius: 20px;
         
+        /*
+        border-radius: 20px;
+        border: 3px solid white;  
+        */
     }
 
     img{
@@ -275,15 +287,22 @@ input[type=submit]:hover{
     div#img-bg{
         background: url(images/spaceship.png) no-repeat;
         float: left;
-        background-position: bottom center;
-        width: 50%;
-        height: 80%;
+        background-position: center;
+        width: 53%;
+        height: 100%;
+        background-color: var(--cor3);
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        
     }
 
     form{
-        border-left: 1px solid white;
+        
+        background-color: var(--cor4);
+        border-radius: 20px;
         margin: auto;
         float: right;
+        padding-left: 20px;
         width: 50%;
         height: 100%;
     }
@@ -291,8 +310,10 @@ input[type=submit]:hover{
     /*Input Configs*/
 
     .camp > input{
+        background-color: var(--cor4);
+        color: #020408;
         margin-bottom: 20px;
-        width: 60%;
+        width: 65%;
         height: 50px;
         border: 1.5px solid white;
 
@@ -300,20 +321,19 @@ input[type=submit]:hover{
 
     div#checkbox{
         text-align: justify;
-        margin-left: 21%;
+        margin-left: 19%;
         width: 60%;
     }
 
     form > button{
 
-        width: 40%;
+        width: 60%;
         height: 40px;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 20px;
         border: 1px solid #020408;
         transition: .5s;   
         cursor: pointer;
-
         font-size: 1em;
 
     }
@@ -321,16 +341,16 @@ input[type=submit]:hover{
     /*Botão de enviar*/
 
     input[type=submit]{
-        background-color: var(--cor3);
+        background-color: var(--cor5);
         font-size: 1em;
         cursor: pointer;
         display: block;
         margin: auto;
-        width: 40%;
+        width: 60%;
         height: 35px;
         font-weight: bold;
         border: none;
-        border-radius: 10px;
+        border-radius: 20px;
 
         color: white;
         
