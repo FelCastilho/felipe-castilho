@@ -121,7 +121,7 @@ form > button{
     cursor: pointer;   
 
     font-size: 1.1em;
-    font-weight: bold;
+
 }
 
 button:hover{
@@ -142,11 +142,11 @@ input[type=submit]{
     margin-bottom: 20px;
     width: 65%;
     height: 35px;
-    font-weight: bold;
     border: none;
     border-radius: 10px;
 
     color: white;
+    font-size: 1.1em;
 
     transition: .5s;
 }
@@ -256,11 +256,11 @@ input[type=submit]:hover{
     }
 
     section.register{
-        top: 7%;
+        top: 5%;
         display: block;
         margin: auto;
         width: 95%;
-        height: 85%;
+        height: 90%;
         border: 1px solid white;
         border-radius: 20px;
         
@@ -300,13 +300,13 @@ input[type=submit]:hover{
 
     div#checkbox{
         text-align: justify;
-        margin-left: 115px;
-        width: 65%;
+        margin-left: 21%;
+        width: 60%;
     }
 
     form > button{
 
-        width: 30%;
+        width: 40%;
         height: 40px;
         background-color: white;
         border-radius: 10px;
@@ -314,23 +314,26 @@ input[type=submit]:hover{
         transition: .5s;   
         cursor: pointer;
 
+        font-size: 1em;
+
     }
 
     /*Botão de enviar*/
 
     input[type=submit]{
         background-color: var(--cor3);
+        font-size: 1em;
         cursor: pointer;
         display: block;
         margin: auto;
-        width: 30%;
+        width: 40%;
         height: 35px;
         font-weight: bold;
         border: none;
         border-radius: 10px;
 
         color: white;
-
+        
         transition: .5s;
     }
 
