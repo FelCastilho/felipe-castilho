@@ -173,12 +173,10 @@ img{
 
 @media screen and (min-width: 1024px) {
 
+
     /*Configurando as imagens*/
 
-    header{
-        display: flex;
-        flex-direction: column;
-    }
+    
     
     /*remover o efeito de opacidade em telas grandes*/
 
