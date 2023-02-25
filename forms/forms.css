@@ -12,15 +12,17 @@
 :root{
     --font-padrão: 'Montserrat', sans-serif;
 
-    --cor1:#28104E;
-    --cor2:#064680;
-    --cor3: #181818;
+    --cor1: #98BAE3;
+    --cor2: #5981B1 ;
+    --cor3: #365475 ;
+    --cor4: #15273C;
+    --cor5: #020408;
 }
 
 /*Configurações header Mobile*/
 
 header{
-    background-color: #28104E;
+    background-color: var(--cor4);
     border-bottom: 1px solid white;
     text-align: center;
     padding-top: 20px;
@@ -39,13 +41,11 @@ header a{
     color: white;
     text-decoration: none;
     transition: 0.6s;
-    
 }
 
 header a:hover{
     opacity: 0.7;
 }
-
 menu{
     display: none;
 }
@@ -91,11 +91,11 @@ span#burguer:hover{
 }
 
 body{
-    background-color: #181818;
+    background-color: var(--cor5);
 }
 
-main > h1{
-    font-size: 1.8em;
+h1{
+    font-size: 1.9em;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -122,7 +122,7 @@ img{
     display: block;
     margin: auto;
     
-    max-width: 90%;
+    max-width: 80%;
     min-width: 30%;
 
     border-radius: 15px;
@@ -131,18 +131,40 @@ img{
     margin-top: 20px;
     margin-bottom: 50px;
 
+    transition: 0.3s;
 }
 
-/*Animação dentro das imagens no celular*/
+/*Opacidade (Animação) Cards (MOBILE)*/
 
-.telas{
-    transition: 0.3;
-}
-.telas:hover{
+img:hover{
     opacity: 0.7;
 }
 
-@media screen and (min-width: 992px) {
+
+/*TABLETS*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    span#burguer{
+        display: block;
+    }
+
+    menu{
+        display: none;
+    }
+
+    menu > ul > li{
+        display: block;
+    }
+
+    menu > ul > li > a{
+        padding: 15px; 
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px) {
 
     header > h1{
         padding-top: 20px;
@@ -167,21 +189,20 @@ img{
 
     menu > ul > li > a{
         border: none;
+        
     }
 
-    .telas:hover{
-        opacity: unset; 
-    }
-
+    
     /*Configuração cards login*/
+
     .cards{
         display: flex;
         padding: 0 6%; /*Aplicando a distancia */
         margin-left: 30px;
-
     }
  
     /*Animação em telas grandes usando figcaption*/
+
     .card-3d{
         position: relative;
         transform-style: preserve-3d;
@@ -192,6 +213,8 @@ img{
     .card-3d:hover{
         transform: translateZ(50px);
     }
+
+    
 
 
 }
