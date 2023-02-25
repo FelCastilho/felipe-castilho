@@ -164,11 +164,6 @@ img{
     header{
         display: flex;
         flex-direction: column;
-
-        /*REMOVER APÓS AJUSTAR O MENU!!!*/
-
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
     
     /*remover o efeito de opacidade em telas grandes*/
