@@ -5,48 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Links externos-->
-    <link rel="shortcut icon" href="./login-images/favicon.ico" type="image/x-icon">
+    <!--Links Externos-->
+    <script src="https://kit.fontawesome.com/425c8a2ebb.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="login02.css">
-    <title>Login - 2 </title>
+    <title>Login</title>
 </head>
 <body>
     
+    <div id="bg-image">
+        
+    </div>
     <main>
 
-        <section id="login">
+        <section class="register">
 
-            <div id="image">
-                <!--Imagem aplicada pelo CSS-->
+            <div id="img-bg">
+                <img src="images/spaceship.png" alt="Imagem da nave">
             </div>
 
-            <h1>Login</h1>
-            
-            
             <form action="login.php" method="post">
 
+                <div id="text">
+                    
+                    <h1>Welcome Back</h1>
+                    <p>Connect to your account</p>
+
+                </div>
+      
                 <div class="camp">
-
-                    <label for="iuser"></label>
-                    <input type="text" name="user" id="iuser" maxlength="15" minlength="3" placeholder="Username">
-
+                    <label for="iemail"></label>
+                    <input type="email" name="iemail" id="iemail" required placeholder="Email Adress">
                 </div>
 
                 <div class="camp">
-
-                    <label for="password"></label>
-                    <input type="password" name="ipass" id="ipass" maxlength="20" minlength="8" placeholder="Password" required>
-
+                    <label for="ipassword"></label>
+                    <input type="password" name="ipassword" id="ipassword" required placeholder="Password">
                 </div>
-                
-                <input type="submit" value="Entrar">
-                <button>Esqueci a senha</button>
-
-                
-            </form>
-            <h2>* Os dados não serão coletados</h2>
-        </section>
         
+                
+                <div id="checkbox">
+
+                    <label for="icheckbox"></label>
+                    <input type="checkbox" name="icheckbox" id="icheckbox" required> Remember me
+
+                </div>
+
+
+                <button> <i class="fa-brands fa-google"></i> Log in with Google</button>
+                <button> <i class="fa-brands fa-facebook"></i> Log in with Facebook</button>
+        
+                
+
+                <input type="submit" value="Login">
+
+            </form>
+
+        </section>
+
     </main>
+
 </body>
 </html>

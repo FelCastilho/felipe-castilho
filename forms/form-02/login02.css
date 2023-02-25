@@ -1,213 +1,372 @@
 @charset 'UTF-8';
 
-/*Mobile First*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body,html{
-    background-color: #181818;
-    height: 100%;
-    position: relative;
-    width: 100%;
+:root{
+
+    --cor1: #98BAE3;
+    --cor2: #5981B1 ;
+    --cor3: #365475 ;
+    --cor4: #15273C;
+    --cor5: #020408;
+
+    --font: 'Lexend', sans-serif;
 }
 
-main{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    
+*{
+    font-family: var(--font);
 }
 
-section#login{
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #15273C, #020408) ;
+    color: white;
+}
 
-    /*Centralizando*/
+section.register{
+
+    /*Centralizando todos os itens*/
     position: absolute;
-    width: 70%;
-    height: 600px;
-    background-color: white;
-    top: 50%;
+    width: 100%;
     left: 50%;
     
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 
 }
 
-section#login > div#form{
-    padding: 10px;
-    display: block;
+img{
+    display: none;
+    margin: auto;
+    max-width: 30%;
 }
 
-section > h1{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-section > h2{
-    font-size: 1.0em;
-    text-align: center;
-    margin-top: 60px;
-    color: white;
+strong{
+    color: #5981B1;
 }
 
-div#image{
-    display: block;
-    background: url(images/astronaut\ -\ large.jpg) no-repeat;
-    height:250px;
-    background-image: cover;
-    background-position: center;
 
-    border-radius: 20px 20px 0 0;
+/*Configurando o formulário*/
+
+form{
+    padding: 20px;
+    width: 100%;
+    height: 100vw;
 }
 
-.camp{
+div#text{
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
+
+div#text > h1{
+    
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.4em;
+}
+
+
+div#text > p{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+div#text > p a{
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+div#text > p a:hover{
+    text-decoration: underline;
+}
+
+/*Input Configs*/
 
 .camp > input{
-    padding: 10px;
+    
+    display: block;
+    margin: auto;
+    padding: 14px;
+    margin-bottom: 20px;
     border: none;
-    border-bottom: 2px solid #181818;
-    width: 65%;
-}
-
-/*Criando animação dentro do botão ENTRAR*/
-
-input[type = submit]{
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 1.5px solid white;
     color: white;
-    background-color: #181818;
-    width: 35%;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    transition: .7s;
+    border-radius: 15px;
+    
 }
 
-input[type = submit]:hover{
-    border: 1px solid #181818;
-    color: #181818;
-    background-color: white;
+#checkbox{
+    width: 100%;
+    margin: 30px 10px 30px ;
 }
 
-/*Criando animação botão Esqueci a senha*/
+/*Botões google e facebook*/
 
 form > button{
-    width: 35%;
-    height: 35px;
+
+    display: block;
+    flex-direction:row ;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
     background-color: white;
     border-radius: 10px;
-    border: 2px solid #181818;
-    transition: .7s;
-    
+    border: 1px solid #020408;
+    transition: .5s;   
+    cursor: pointer;   
+
+    font-size: 1.1em;
+
 }
 
 button:hover{
-    background-color: #181818;
+    background-color: #020408;
     color: white;
-    
+    border: 1px solid white;
 }
 
-input[type = submit], button{
+
+/*Botão de enviar*/
+
+input[type=submit]{
+    
+    background-color: var(--cor3);
+    cursor: pointer;
     display: block;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 65%;
+    height: 35px;
     border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.1em;
+
+    transition: .5s;
 }
+
+input[type=submit]:hover{
+    background-color: white;
+    color: #365475;
+    font-weight: bold;
+
+    border: 1px solid #365475;
+}
+
+/*Adaptando tamanhos de tela*/
+
 /*Tablets*/
 
-@media screen and (min-width:768px) and (max-width: 992px) {
-    
-    div#image{
-    display: block;
-    height: 200px;
-    background-image: cover;
-    background-position: center;
+@media screen and (min-width: 768px) and (max-width: 1024px) {   
 
-    border-radius: 20px 20px 0 0;
-        
+    img{
+        display: block;
+        margin: auto;
+        max-width: 30%;
     }
 
-}
-/*Telas GRANDES*/
+    /*Ajustando a altura para tablets*/
 
-@media screen and (min-width: 992px) {
-
-    section#login{
-        width: 70%;
-        height: 450px;
+    section.register{
+        top: 5%; 
     }
 
-    section > h1{
-        margin-top: 10%;
+    div#text > h1{
+        font-size: 3.3em;
     }
 
-    section > h2{
-        font-size: 1.0em;
-        text-align: center;
-        margin-top: 10%;
-        color: white;
+    div#text > p{
+        font-size: 1.7em;
     }
     
-    .camp{
-        width: 500px;
+    /*Input Configs*/
+
+    .camp > input{
+        margin-bottom: 20px;
+        width: 65%;
+        border: 1.5px solid white;
     }
 
-    input[type=submit]{
-        width: 18%;
-        height: 35px;
-        font-size: 1em;
-
-        color: white;
-        background-color: #181818;
-
-        border-radius: 15px;
-        cursor: pointer;
-
-        transition: 0.6s;
-    }
-
-    input[type=submit]:hover{
-        color: #181818;
-        background-color: white;
-        border: 1px solid #181818;
+    #checkbox{
+        width: 100%;
+        margin: 50px 145px 50px ;
     }
 
     form > button{
-        width: 18%;
-        height: 35px;
-        color: #181818;
+        margin-bottom: 20px;
+        width: 50%;
+        height: 50px;
         background-color: white;
-        border: 2px solid #181818;
-        border-radius: 15px;
-        transition: 0.5s;
+        border-radius: 10px;
+        border: 1px solid #020408;
+        transition: .5s;   
+        cursor: pointer;   
+    }
+
+    /*Botão de enviar*/
+
+    input[type=submit]{
+        background-color: var(--cor3);
         cursor: pointer;
-        font-size: 1em;
-    }
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        width: 50%;
+        height: 35px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
 
-    button:hover{
         color: white;
-        background-color: #181818;
+
+        transition: .5s;
     }
 
-    input[type=submit], button{
-        margin-top: 3%;
+}
+
+/*TELAS GRANDES*/
+
+@media screen and (min-width: 1024px){
+
+    body{
+        background-image: unset;
+        background-color: #020408;
+        
     }
     
-    div#image{
-        float: right;
+    div#text{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    div#text > h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2.3em;
+    }
+    
+    
+    div#text > p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    div#text > p a{
+        text-decoration: none;
+        color: #020408;
+    }
+
+    div#text > p a:hover{
+        text-decoration: underline;
+    }
+
+    section.register{
+        top: 9%;
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: 80%;
+        
+        /*
+        border-radius: 20px;
+        border: 3px solid white;  
+        */
+    }
+
+    img{
+        display: none;
+    }
+
+    /*Adicionando a imagem via CSS para telas grandes*/
+
+    div#img-bg{
+        background: url(images/spaceship.png) no-repeat;
+        float: left;
+        background-position: center;
+        width: 53%;
+        height: 100%;
+        background-color: var(--cor3);
         border-radius: 0px 20px 20px 0px;
-        background: url(images/astronaut\ -\ large.jpg);
-        background-position: bottom center;
+        position: absolute;
+        
+    }
+
+    form{
+        
+        background-color: var(--cor4);
+        border-radius: 20px;
+        margin: auto;
+        float: right;
+        padding-left: 20px;
         width: 50%;
         height: 100%;
     }
-}
 
+    /*Input Configs*/
+
+    .camp > input{
+        background-color: var(--cor4);
+        color: #020408;
+        margin-bottom: 20px;
+        width: 65%;
+        height: 50px;
+        border: 1.5px solid white;
+
+    }
+
+    div#checkbox{
+        text-align: justify;
+        margin-left: 19%;
+        width: 60%;
+    }
+
+    form > button{
+
+        width: 60%;
+        height: 40px;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px solid #020408;
+        transition: .5s;   
+        cursor: pointer;
+        font-size: 1em;
+
+    }
+
+    /*Botão de enviar*/
+
+    input[type=submit]{
+        background-color: var(--cor5);
+        font-size: 1em;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 35px;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+
+        color: white;
+        
+        transition: .5s;
+    }
+
+    
+}
