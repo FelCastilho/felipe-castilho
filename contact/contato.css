@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor1: #98BAE3;
+    --cor2: #5981B1 ;
+    --cor3: #365475 ;
+    --cor4: #15273C;
+    --cor5: #020408;
+}
+
 body{
-    background-color: #181818;
+    background-color: var(--cor5);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -69,8 +77,8 @@ h2::before{
 
 .form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus{
     outline: none;
-    border-color: #09d;
-    box-shadow: 0 0 0 3px #4dc8ff ;
+    border-color: #98BAE3;
+    box-shadow: 0 0 0 3px #5981B1 ;
 }
 
 .form button{
@@ -89,4 +97,8 @@ h2::before{
 .form button:hover , .form button:focus{
     outline: none;
     background: #09d;
+}
+
+.res{
+    color: white;
 }
