@@ -29,14 +29,12 @@ header{
 }
 
 header > h1{
-    padding-top: 20px;
+    padding-top: 10px;
     color: white;
     max-width: 100%;
-    
 }
 
 header a{
-    font-size: 2em;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -46,6 +44,7 @@ header a{
 header a:hover{
     opacity: 0.7;
 }
+
 menu{
     display: none;
 }
@@ -58,20 +57,24 @@ menu > ul{
 menu > ul > li > a{
    
     border-top: 1px solid white;
-    font-size: 1.2em;
     text-align: center;
     display: block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
     color: white;
+    font-size: 1.2em;
+
+    /*MUDAR*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*Efeito Hover no menu*/
 
 menu > ul > li > a:hover{
-    background-color: white;
-    color: #28104E;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    
 }
 
 /*Modelo Hamburguer nos dispositivos mobile*/
@@ -88,13 +91,14 @@ span#burguer{
 span#burguer:hover{
     color: black;
     background-color: white;
+    transition: .3s;
 }
 
 body{
     background-color: var(--cor5);
 }
 
-h1{
+main > h1{
     font-size: 1.9em;
     text-align: center;
     margin-top: 60px;
@@ -145,6 +149,12 @@ img:hover{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    /*Título Nome*/
+
+    header a{
+        font-size: 1.3em;
+    }
+
     span#burguer{
         display: block;
     }
@@ -163,13 +173,28 @@ img:hover{
     
 }
 
+/*Telas Grandes*/
 
 @media screen and (min-width: 1024px) {
 
-    header > h1{
-        padding-top: 20px;
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2px;
+        padding-bottom: 7px;
     }
 
+
+    header > menu{
+        font-size: 1.3em;
+    }
+
+    menu > ul > li > a{
+        border-radius: 10px;
+        margin-left: 10px;
+    }  
+    
     /*Menu Hamburguer*/
 
     span#burguer{
@@ -191,6 +216,8 @@ img:hover{
         border: none;
         
     }
+
+    
 
     
     /*Configuração cards login*/

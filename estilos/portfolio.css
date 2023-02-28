@@ -20,6 +20,7 @@
 }
 
 /*Configurações header Mobile*/
+
 header{
     background-color: var(--cor4);
     border-bottom: 1px solid white;
@@ -28,19 +29,16 @@ header{
 }
 
 header > h1{
-    padding-top: 20px;
+    padding-top: 10px;
     color: white;
     max-width: 100%;
-    
 }
 
 header a{
-    font-size: 2em;
     text-align: center;
     color: white;
     text-decoration: none;
     transition: 0.6s;
-    
 }
 
 header a:hover{
@@ -61,7 +59,7 @@ menu > ul > li > a{
     border-top: 1px solid white;
     text-align: center;
     display: block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -74,8 +72,8 @@ menu > ul > li > a{
 /*Efeito Hover no menu*/
 
 menu > ul > li > a:hover{
-    background-color: var(--cor2);
-    color: white;
+    background-color: var(--cor1);
+    color: var(--cor4);
     
 }
 
@@ -149,6 +147,12 @@ img{
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    /*Título Nome*/
+
+    header a{
+        font-size: 1.3em;
+    }
+
     span#burguer{
         display: block;
     }
@@ -174,9 +178,23 @@ img{
 @media screen and (min-width: 1024px) {
 
 
-    /*Configurando as imagens*/
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2px;
+        padding-bottom: 7px;
+    }
 
-    
+
+    header > menu{
+        font-size: 1.3em;
+    }
+
+    menu > ul > li > a{
+        border-radius: 10px;
+        margin-left: 10px;
+    }  
     
     /*remover o efeito de opacidade em telas grandes*/
 
@@ -236,6 +254,6 @@ img{
 
     main > h1{
         padding-top: 20px;
-        font-size: 2em;
+        font-size: 2.6em;
     }
 }
