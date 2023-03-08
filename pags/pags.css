@@ -1,6 +1,9 @@
 @charset 'UTF-8';
 
+/*Importando fontes*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 *{
     margin: 0;
@@ -11,19 +14,19 @@
 
 :root{
     --font-padrão: 'Montserrat', sans-serif;
+    --links: 'Lexend', sans-serif;
 
-    --cor1: #98BAE3;
+    --cor1: #cdd4e9;
     --cor2: #5981B1 ;
-    --cor3: #365475 ;
-    --cor4: #15273C;
+    --cor3: #223D7C ;
+    --cor4: #12234A;
     --cor5: #020408;
 }
 
 /*Configurações header Mobile*/
 
 header{
-    background-color: var(--cor4);
-    border-bottom: 1px solid white;
+    background-color: var(--cor3);
     text-align: center;
     padding-top: 20px;
 }
@@ -41,7 +44,7 @@ header a{
     transition: 0.6s;
 }
 
-header a:hover{
+header > h1 a:hover{
     opacity: 0.7;
 }
 
@@ -86,12 +89,14 @@ span#burguer{
     text-align: center;
     padding: 10px;
     cursor: pointer;
+
 }
 
 span#burguer:hover{
     color: black;
     background-color: white;
     transition: .3s;
+
 }
 
 body{
