@@ -1,6 +1,9 @@
 @charset 'UTF-8';
 
+/*Importando fontes*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 *{
     margin: 0;
@@ -11,21 +14,21 @@
 
 :root{
     --font-padrão: 'Montserrat', sans-serif;
+    --links: 'Lexend', sans-serif;
 
-    --cor1: #98BAE3;
+    --cor1: #cdd4e9;
     --cor2: #5981B1 ;
-    --cor3: #365475 ;
-    --cor4: #15273C;
+    --cor3: #223D7C ;
+    --cor4: #12234A;
     --cor5: #020408;
 }
 
 /*Configurações header Mobile*/
 
 header{
-    background-color: var(--cor4);
-    border-bottom: 1px solid white;
+    background-color: var(--cor3);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 header > h1{
@@ -38,10 +41,10 @@ header a{
     text-align: center;
     color: white;
     text-decoration: none;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
-header a:hover{
+header > h1 a:hover{
     opacity: 0.7;
 }
 
@@ -55,7 +58,6 @@ menu > ul{
 }
 
 menu > ul > li > a{
-   
     border-top: 1px solid white;
     text-align: center;
     display: block;
@@ -65,15 +67,17 @@ menu > ul > li > a{
     color: white;
     font-size: 1.2em;
 
-    /*MUDAR*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--links);
 }
 
 /*Efeito Hover no menu*/
 
 menu > ul > li > a:hover{
-    background-color: var(--cor1);
-    color: var(--cor4);
+    
+    color: var(--cor3);
+
+    /*Mudar*/
+    background-color: rgba(230, 230, 230, 0.822);
     
 }
 
@@ -192,7 +196,7 @@ img{
     }
 
     menu > ul > li > a{
-        border-radius: 10px;
+        border-radius: 5px;
         margin-left: 10px;
     }  
     
@@ -221,6 +225,7 @@ img{
 
     menu > ul > li > a{
         border: none;
+        padding: 6px;
     }
 
     img{
