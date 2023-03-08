@@ -22,12 +22,13 @@
     --cor4: #12234A;
     --cor5: #141414;
 }
+
 /*Configurações header Mobile*/
 
 header{
     background-color: var(--cor3);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 header > h1{
@@ -40,10 +41,10 @@ header a{
     text-align: center;
     color: white;
     text-decoration: none;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
-header a:hover{
+header > h1 a:hover{
     opacity: 0.7;
 }
 
@@ -57,7 +58,6 @@ menu > ul{
 }
 
 menu > ul > li > a{
-   
     border-top: 1px solid white;
     text-align: center;
     display: block;
@@ -67,15 +67,17 @@ menu > ul > li > a{
     color: white;
     font-size: 1.2em;
 
-
     font-family: var(--links);
 }
 
 /*Efeito Hover no menu*/
 
 menu > ul > li > a:hover{
-    background-color: var(--cor1);
-    color: var(--cor4);
+    
+    color: var(--cor3);
+
+    /*Mudar*/
+    background-color: rgba(230, 230, 230, 0.822);
     
 }
 
@@ -95,7 +97,6 @@ span#burguer:hover{
     background-color: white;
     transition: .3s;
 }
-
 
 body{
     background-color: var(--cor5);
