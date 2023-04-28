@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/96996b95c19ecf8733387b6c0b2311e3?family=Rossetti);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --font-padrão: 'Montserrat', sans-serif;
+    --links: 'Lexend', sans-serif;
+
+    --cor1: #cdd4e9;
+    --cor2: #5981B1 ;
+    --cor3: #223D7C ;
+    --cor4: #12234A;
+    --cor5: #141414;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+
+    font-family: var(--links);
+
+}
+
+a:hover{
+    color: var(--cor2) ;
+}
+
+#header{
+    box-sizing: border-box;
+    display: flex; /*Colocando um do lado do outro*/
+    align-items: center;
+    height: 100px;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: var(--cor3);
+    color: white;
+}
+
+
+#header > h1:hover{
+    opacity: 0.8;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem; /*criando espaço entre os itens*/
+   
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+    
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        right: 0px;
+        background-color: var(--cor4);
+        visibility: hidden;
+        overflow-y: hidden;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000; /*Colocar o maior valor possivel pra isso ficar cobrindo toda a estrutura do site*/
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid white ;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer{
+        display: block;
+        border-top: 2px solid #d9c51d; /*Barrinha de cima*/
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--cor1);
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        
+        top: -7px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #header > h1{
+        margin-left: 150px ;
+        font-size: 1.8em
+    }
+
+    #nav{
+        margin-right: 150px ;
+    }
+
+    #nav li{
+        margin-left: 20px ;
+    }
+
+    #nav a{
+        font-size: 1.3em
+    }
+    
+}

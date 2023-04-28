@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Chamada CSS-->
+    <link rel="stylesheet" href="estilos/navbar.css">
+
     <!--Links Externos-->
+
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -15,27 +20,29 @@
     <title>Portfólio - Felipe Coutinho</title>
 </head>
 
-<header>
 
-    <h1><a href="#">Felipe Castilho</a></h1>
+<body> 
+    
+    <header id="header">
 
-    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-
-    <menu id="itens" class="navigation">
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact/contato.html">Contato</a></li>
-            <li><a href="curriculo.html">Currículo</a></li>
-        </ul>
+        <h1>Felipe Castilho</h1>
         
-    </menu>
+        <nav id="nav">
 
-    
-</header>
+            <button id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu" aria-expanded="false">
 
-<body onresize="mudouTamanho()"> 
-    
+                <span id="hamburguer"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact/contato.html">Contato</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
     <main>
 
         <h1>HTML5 e CSS3</h1>
@@ -69,41 +76,11 @@
           
         </section>
     </main>
+
+    <script src="scripts/mobile-menu.js"></script>
     
     <!--JAVASCRIPT INTERNO-->
     <script>  
-
-        function mudouTamanho(){
-        if(window.innerWidth >= 768){
-            itens.style.display = 'block'
-        }else{
-            itens.style.display = 'none'
-        }
-       }
-
-       function clickMenu(){
-
-        var burguer = document.getElementById('burguer') // var simbolo hamburguer 
-
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-
-                //Mudando a cor do burguer (1)
-                burguer.style.background = '#223D7C'
-                burguer.style.color = 'white'
-                
-                
-            }else{
-                itens.style.display = 'block'
-
-                //Mudando a cor do burguer (2)
-                
-                burguer.style.background = 'white'
-                burguer.style.color = '#12234A'
-                
-            }
-       }
-
        //Criando Scroll Reveal
        
        window.sr = ScrollReveal({reset: true})

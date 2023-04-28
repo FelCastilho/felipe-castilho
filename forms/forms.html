@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Chamada CSS-->
+    <link rel="stylesheet" href="../estilos/navbar.css">
+
     <!--Links externos-->
 
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -18,22 +21,27 @@
     <title>Formulários</title>
 </head>
 
-<header>
-    <h1><a href="#">Felipe Castilho</a></h1>
-    
-    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+<body>     
 
-    <menu id="itens">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../curriculo.html">Currículo</a></li>
-            <li><a href="../contact/contato.html">Contato</a></li>
-        </ul>
-    </menu>
-    
-</header>
+    <header id="header">
 
-<body onresize="mudouTamanho()">     
+        <h1>Felipe Castilho</h1>
+        
+        <nav id="nav">
+    
+            <button id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu" aria-expanded="false">
+    
+                <span id="hamburguer"></span>
+            </button>
+    
+            <ul id="menu" role="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact/contato.html">Contato</a></li>
+                <li><a href="../curriculo.html">Currículo</a></li>
+    
+            </ul>
+        </nav>
+    </header>
 
     <main>
 
@@ -62,38 +70,8 @@
 
     </main>
     
+    <script src="../scripts/mobile-menu.js"></script>
     <script>  
-
-        function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            }else{
-                itens.style.display = 'none'
-            }
-        }
-        function clickMenu(){
-
-        var burguer = document.getElementById('burguer') // var simbolo hamburguer 
-
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-
-                //Mudando a cor do burguer (1)
-                burguer.style.background = '#223D7C'
-                burguer.style.color = 'white'
-                
-                
-            }else{
-                itens.style.display = 'block'
-
-                //Mudando a cor do burguer (2)
-                
-                burguer.style.background = 'white'
-                burguer.style.color = '#15273C'
-                
-            }
-       }
-
        //Criando Scroll Reveal
        
        window.sr = ScrollReveal({reset: true})
