@@ -149,6 +149,11 @@ a:hover{
         font-size: 1.8em
     }
 
+    a:hover{
+        color: white;
+    }
+    
+
     #nav{
         margin-right: 150px ;
     }
@@ -160,5 +165,27 @@ a:hover{
     #nav a{
         font-size: 1.3em
     }
+
+    nav a:hover{
+        opacity: unset;
+    }
     
+    li{
+        position: relative;
+    }
+
+    li > a::after{
+        content: ' ';
+        width: 0%;
+        height: 4px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .4s ease-in-out;
+    }
+
+    nav a:hover::after{
+        width: 100%;
+    }
 }
