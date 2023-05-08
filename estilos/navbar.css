@@ -146,7 +146,8 @@ a:hover{
 
     #header > h1{
         margin-left: 150px ;
-        font-size: 1.8em
+        font-size: 1.8em;
+        cursor: pointer;
     }
 
     a:hover{
