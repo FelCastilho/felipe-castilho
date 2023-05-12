@@ -24,9 +24,7 @@ a{
     transition: .5s;
     font-weight: bolder;
     letter-spacing: 1.3px;
-
     font-family: var(--links);
-
 }
 
 a:hover{
@@ -43,7 +41,6 @@ a:hover{
     background-color: var(--cor3);
     color: white;
 }
-
 
 #header > h1:hover{
     opacity: 0.8;
@@ -72,7 +69,7 @@ a:hover{
         display: block;
         position: absolute;
         width: 100%;
-        top: 95px;
+        top: 100px;
         right: 0px;
         background-color: var(--cor4);
         visibility: hidden;
@@ -141,6 +138,16 @@ a:hover{
     }
 }
 
+/*Para tablets*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    a{
+        font-size: 1.6em;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
 
     #header > h1{
@@ -152,7 +159,6 @@ a:hover{
     a:hover{
         color: white;
     }
-    
 
     #nav{
         margin-right: 150px ;
