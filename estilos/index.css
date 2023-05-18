@@ -160,10 +160,15 @@ img{
     }
     
     .btn{
+        
         margin-top: 70px;
         display: flex;
         flex-direction: row;
         justify-content: start;        
+    }
+
+    .portfolio{
+        margin: 0px;
     }
 
     #image-mobile{
