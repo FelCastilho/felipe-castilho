@@ -45,23 +45,53 @@ body{
     font-size: 1.2em;
 }
 
-
-.btn-mobile{
+.btn{
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*Desativando botão desktop*/
-.btn-desktop{
-    display: none;
-}
-
-div > a{
+a{
     text-decoration: none;
     color: white;
 }
+
+.portfolio{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #223D7C;
+    border: none;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.portfolio:hover{
+    background-color: transparent;
+}
+
+.curriculo{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.curriculo:hover{
+    background-color: #223D7C;
+}
+
 
 strong{
     color: #5981B1;
@@ -74,6 +104,7 @@ img{
     display: block;
     margin: auto;
     margin-top: 40px;
+    display: none;
 }
 
 
@@ -112,18 +143,18 @@ img{
         transform: translate(-50%, -50%);
     }
 
-    /*Desativando o botão mobile*/
-    .btn-mobile{
-        display: none;
+    .box-text{
+        display: fl;
+        flex-direction: column;
     }
-
-    .btn-desktop{
-        display: block;
-        margin-top: 20px;
+    
+    .btn{
+        margin-top: 10px;
+        width: 200px;
     }
-
     img{
-        border: 3px solid ;
+        display: block;
+        border: 3px solid;
         border-color:#5981B1 #5981B1 #223D7C;
         box-shadow: 0 0 15px #5981B1;
         width: 100%;
