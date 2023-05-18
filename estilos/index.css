@@ -57,7 +57,7 @@ body{
     display: none;
 }
 
-#portfolio{
+.portfolio{
     margin: 20px;
     width: 30%;
     padding: 16px;
@@ -69,17 +69,17 @@ body{
     
 }
 
-#portfolio > a{
+.portfolio > a{
     text-decoration: none;
     color: white;
     font-family: var(--font-title);
 }
 
-#portfolio:hover{
+.portfolio:hover{
     background-color: #141414;
 }
 
-#curriculo{
+.curriculo{
     margin: 20px;
     width: 30%;
     padding: 15px;
@@ -90,13 +90,13 @@ body{
     cursor: pointer;
 }
 
-#curriculo > a{
+.curriculo > a{
     text-decoration: none;
     color: white;
     font-family: var(--font-title);
 }
 
-#curriculo:hover{
+.curriculo:hover{
     background-color: #12234A;
     
 }
@@ -160,22 +160,22 @@ img{
         margin-top: 20px;
     }
 
-    #portfolio{
+    .portfolio{
         margin: 0px;
         width: 30%;
     }
 
-    #portfolio:hover{
+    .portfolio:hover{
         background-color: transparent;
         box-shadow: 0 0 15px #5981B1;
         border: 2px solid #223D7C;
     }
 
-    #curriculo{
+    .curriculo{
         background-color: transparent;
     }
 
-    #curriculo:hover{
+    .curriculo:hover{
         border: 2px solid #12234A;
         box-shadow: 0 0 15px #5981B1;
     }
