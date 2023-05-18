@@ -53,52 +53,14 @@ body{
     justify-content: center;
 }
 
+/*Desativando botão desktop*/
 .btn-desktop{
     display: none;
 }
 
-.portfolio{
-    margin: 20px;
-    width: 30%;
-    padding: 16px;
-    background-color: #12234A;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: .3s;
-    cursor: pointer;
-    
-}
-
-.portfolio > a{
+div > a{
     text-decoration: none;
     color: white;
-    font-family: var(--font-title);
-}
-
-.portfolio:hover{
-    background-color: #141414;
-}
-
-.curriculo{
-    margin: 20px;
-    width: 30%;
-    padding: 15px;
-    background-color: #141414;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.curriculo > a{
-    text-decoration: none;
-    color: white;
-    font-family: var(--font-title);
-}
-
-.curriculo:hover{
-    background-color: #12234A;
-    
 }
 
 strong{
@@ -160,28 +122,9 @@ img{
         margin-top: 20px;
     }
 
-    .portfolio{
-        margin: 0px;
-        width: 30%;
-    }
-
-    .portfolio:hover{
-        background-color: transparent;
-        box-shadow: 0 0 15px #5981B1;
-        border: 2px solid #223D7C;
-    }
-
-    .curriculo{
-        background-color: transparent;
-    }
-
-    .curriculo:hover{
-        border: 2px solid #12234A;
-        box-shadow: 0 0 15px #5981B1;
-    }
-
     img{
-        border: 3px solid #5981B1;
+        border: 3px solid ;
+        border-color:#5981B1 #5981B1 #223D7C;
         box-shadow: 0 0 15px #5981B1;
         width: 100%;
         margin-top: 10px;
