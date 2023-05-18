@@ -125,12 +125,25 @@ img{
 
 @media screen and (min-width: 1024px) {
 
+    body{
+        background: url(../images/perfil-background.jpg) no-repeat;
+        background-position: center right;
+        height: 100vh;
+    }
 
     section{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        width: 80%;
+        width: 70%;
+        height: 70%;
+        backdrop-filter: blur(20px);
+        border: 2px solid #5981B1;
+        
+        
+        border-radius: 20px;
         
         top: 50%;
         left: 50%;
@@ -152,7 +165,25 @@ img{
         width: 30%;
     }
 
+    #portfolio:hover{
+        background-color: transparent;
+        box-shadow: 0 0 15px #5981B1;
+        border: 2px solid #223D7C;
+    }
+
+    #curriculo{
+        background-color: transparent;
+    }
+
+    #curriculo:hover{
+        border: 2px solid #12234A;
+        box-shadow: 0 0 15px #5981B1;
+    }
+
     img{
+        border: 3px solid #5981B1;
+        box-shadow: 0 0 15px #5981B1;
+        width: 100%;
         margin-top: 10px;
     }
     
