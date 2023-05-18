@@ -1,241 +1,161 @@
-@charset 'UTF-8';
+/*Importando fontes*/
 
-/*Configurações gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     font-family: var(--font-padrão);
 }
 
 :root{
     --font-padrão: 'Montserrat', sans-serif;
+    --links: 'Lexend', sans-serif;
+    --font-title: 'Saira', sans-serif;
 
-    --cor1: #98BAE3;
+    --cor1: #cdd4e9;
     --cor2: #5981B1 ;
-    --cor3: #365475 ;
-    --cor4: #223D7C;
-    --cor5: #0D0D0D;
+    --cor3: #223D7C ;
+    --cor4: #12234A;
+    --cor5: #141414;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    padding: 20px;
-    background-color: var(--cor1);
-    text-align: center;
-}
-
 
 body{
-    background-color: var(--cor5);
+    background-color: #141414;
 }
 
-/*Página em desenvolvimento*/
-body > h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-
-/* #region Configurações box do perfil*/
-
-section#perfil{
-    border-radius: 20px;
-    border: 2px solid white;
-    width: 75%;
-    background-color: var(--cor1);
-    margin: auto;
-    margin-top: 5%;
-}
-
-#perfil-photo img{
-
-    display: flex;
-    margin: auto;
-    padding-top: 20px;
-
-    max-width: 80%;
-    min-width: 30%;
-    
-}
-
-/* #endregion */
-
-h1{
-    margin-top: 20px;
-    text-align: center;
+.box-text{
     color: white;
+    margin: 40px;
+}
+
+.box-text > h1{
+    font-family: var(--font-title);
     font-size: 2em;
 }
 
-h2{
-    text-align: center;
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-}
-
-p{
-    color: white;
+.box-text > p{
     margin-top: 10px;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
-/*Area de redes sociais*/
 
-#redes{
-    background-color: black;
-    padding-top: 5px;
-    border-radius: 0px 0px 20px 20px; 
-    border-top: 1px solid white;
-}
-
-ul{
-    margin-top: 20px;
-    list-style-type: none;
+.btn-mobile{
+    margin-top: 40px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+}
+
+.btn-desktop{
+    display: none;
+}
+
+#portfolio{
+    margin: 20px;
+    width: 30%;
+    padding: 16px;
+    background-color: #12234A;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
     
 }
- ul > figcaption > li > a{
+
+#portfolio > a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-title);
+}
+
+#portfolio:hover{
+    background-color: #141414;
+}
+
+#curriculo{
+    margin: 20px;
+    width: 30%;
     padding: 15px;
+    background-color: #141414;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#curriculo > a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-title);
+}
+
+#curriculo:hover{
+    background-color: #12234A;
     
 }
 
-/*Seta para baixo*/
+strong{
+    color: #5981B1;
+}
 
-#arrow{
-    /*Centralizando*/
+img{
+    border: 2px solid white;
+    max-width: 60%;
+    border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: 10%;
-
-    width: 12%;
-    
+    margin-top: 40px;
 }
 
-aside{
-    width: 350px;
-    margin: auto;
-}
-
-aside > h1{
-    margin-bottom: 50px;
-}
-
-aside > p{
-    margin-top: 20px;
-    text-align: justify;
-    line-height: 30px;
-}
-
-/*Configurando as logos das Tecnologias*/
-
-div.tec-logo{
-    /*Centralizando a div*/
-    width: 300px;
-    display: block;
-    margin: auto;
-    
-}
-
-div.tec-logo > ul > figcaption{
-    /*Centralizando as imagens das logos*/
-    display: flex;
-    justify-content: center;
-    
-}
-
-div.tec-logo > ul{
-    background-color: #28104E;
-    border-radius: 20px;
-    border: 1px solid white;
-    
-    /*Colocando uma em baixo da outra*/  
-    display: flex;
-    flex-direction: column;
-    
-}
-
-/*Dando espaço entre as logos*/
-
-div.tec-logo img {  
-    margin-top: 80px;  
-}
 
 /*Para tablets*/
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    section#perfil{
-        width: 55%;
-    }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }
 
 /*Para telas grandes*/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
 
-    section#perfil{
+
+    section{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 80%;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*Desativando o botão mobile*/
+    .btn-mobile{
+        display: none;
+    }
+
+    .btn-desktop{
+        display: block;
+        margin-top: 20px;
+    }
+
+    #portfolio{
+        margin: 0px;
         width: 30%;
     }
 
-    #arrow{
-        /*Centralizando*/
-        margin-top: 6%;
-        margin-bottom: 6%;
-        width: 6%;
-        
+    img{
+        margin-top: 10px;
     }
-
-    ul{
-        perspective: 900px;
-    }
-
-    ul > figcaption > li > a{
-        padding: 25px;
-        
-    }
-
-    aside{
-        width: 1000px;
-        margin: auto;
-    }
-
-    aside > h1{
-        margin-bottom: 50px;
-    }
-
-    aside > p{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        text-align: justify;
-        line-height: 30px;
-    }
-
-
-    /*Animação nas redes sociais*/
-
-    .card-3d{
-        position: relative;
-        transform-style: preserve-3d;
-        will-change: transform;
-        transition: transform 0.6s;
-    }
-
-    .card-3d:hover{
-        transform: translateZ(70px);
-    }
+    
 
 }
 
