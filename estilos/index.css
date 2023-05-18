@@ -153,9 +153,22 @@ img{
     
     .btn{
         margin-top: 10px;
-        width: 200px;
+        width: 225px;
     }
-    img{
+
+    .portfolio{
+        padding: 15px;
+    }
+
+    .curriculo{
+        padding: 15px;
+    }
+
+    #image-mobile{
+        display: none;
+    }
+
+    #image-desktop{
         display: block;
         border: 3px solid;
         border-color:#5981B1 #5981B1 #223D7C;
