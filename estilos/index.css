@@ -50,6 +50,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 a{
@@ -59,16 +60,16 @@ a{
 
 .portfolio{
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
-    width: 100px;
+    width: 110px;
     background-color: #223D7C;
     border: none;
     color: white;
     border: 2px solid white;
     transition: .3s;
     cursor: pointer;
-
+    color: white;
 }
 
 .portfolio:hover{
@@ -77,9 +78,9 @@ a{
 
 .curriculo{
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
-    width: 100px;
+    width: 110px;
     background-color: transparent;
     border: none;
     color: white;
@@ -147,26 +148,30 @@ img{
     }
 
     .box-text{
-        display: fl;
+        display: flex;
         flex-direction: column;
+        justify-content: start ;
     }
     
     .btn{
-        margin-top: 10px;
-        width: 225px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;        
     }
 
     .portfolio{
-        padding: 15px;
+        width: 100px;
     }
 
     .curriculo{
-        padding: 15px;
+        width: 100px;
     }
 
     #image-mobile{
         display: none;
     }
+ 
 
     #image-desktop{
         display: block;
