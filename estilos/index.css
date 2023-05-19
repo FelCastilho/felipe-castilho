@@ -113,7 +113,7 @@ strong{
 }
 
 img{
-    border: 4px solid transparent;
+    border: 4px solid white;
     background: linear-gradient(#5981B1, #223D7C, #12234A) padding-box, linear-gradient(260deg, #cdd4e9, #cdd4e9, #223D7C) border-box;
     max-width: 60%;
     border-radius: 50%;
