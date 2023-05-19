@@ -27,10 +27,8 @@
 }
 
 body{
-    background: url(../images/perfil-background.jpg) no-repeat;
-    background-position: left top;
-    height: 100%;
-    overflow-y: hidden;
+    background: url(../images/perfil-background.jpg);
+    background-position: center;
 }
 
 .box-text{
@@ -109,7 +107,7 @@ a{
 
 
 strong{
-    color: red;
+    color: #5981B1;
 }
 
 img{
@@ -202,7 +200,7 @@ img{
     #image-desktop{
         display: block;
         border: 3px solid;
-        border-color: #5981B1 ;
+        border-color: white ;
         width: 100%;
         margin-top: 10px;
     }
