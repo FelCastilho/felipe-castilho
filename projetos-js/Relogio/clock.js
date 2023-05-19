@@ -25,15 +25,15 @@ function relogio(){
         if(hora <= 11){
             msgTxt.innerHTML = 'Bom dia!';
             background.setAttribute('class', 'morning')
-            img.innerHTML = '<img src="images/cafe-quente.png">'
+            img.innerHTML = '<img src="images-relogio/icon-morning.png">'
         }else if(hora <= 18){
             msgTxt.innerHTML = 'Boa tarde!';
             background.setAttribute('class', 'afternoon')
-            img.innerHTML = '<img src="images/alvorecer.png">'
+            img.innerHTML = '<img src="images-relogio/icon-afternoon.png">'
         }else{
             msgTxt.innerHTML = 'Boa Noite!';
             background.setAttribute('class', 'night')
-            img.innerHTML = '<img src="images/cama.png">'
+            img.innerHTML = '<img src="images-relogio/icon-night.png">'
         }
         
     }
