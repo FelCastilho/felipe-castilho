@@ -35,13 +35,13 @@ body{
     margin: 40px;
 }
 
-.box-text > h1{
+.box-header > h1{
     font-family: var(--font-title);
     font-size: 2em;
     text-align: center;
 }
 
-.box-text > p{
+.box-header > p{
     backdrop-filter: blur(15px);
     border-radius: 20px;
     
@@ -103,9 +103,19 @@ a{
     background-color: #12234A;
 }
 
+.box-header{
+    display: flex;
+    flex-direction: column;
+}
 
-strong{
+.typing{
+    display: block;
+    margin: auto;
+    width: 285px;
     color: #5981B1;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 img{
@@ -121,6 +131,18 @@ img{
 
 #image-desktop{
     display: none;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
 }
 
 
@@ -166,21 +188,24 @@ img{
         justify-content: start ;
     }
 
-    .box-text > h1{
+    .box-header > h1{
         font-family: var(--font-title);
         font-size: 2em;
         text-align: unset;
     }
 
-    .box-text > p{
+    .box-header > p{
         padding: unset;
         text-align: unset;
         border: unset;
         backdrop-filter: unset;
     }
+
+    .typing{
+        display: unset;
+    }
     
     .btn{
-        
         margin-top: 70px;
         display: flex;
         flex-direction: row;
@@ -188,7 +213,7 @@ img{
     }
 
     .portfolio{
-        margin: 0px;
+        margin-right: 15px;
     }
 
     #image-mobile{
