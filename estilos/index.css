@@ -65,7 +65,7 @@ a{
 }
 
 .portfolio{
-    margin: 20px;
+    margin-right: 15px;
     padding: 15px;
     border-radius: 10px;
     width: 150px;
@@ -86,7 +86,6 @@ a{
 }
 
 .curriculo{
-    margin: 20px;
     padding: 15px;
     border-radius: 10px;
     width: 150px;
