@@ -27,7 +27,11 @@
 }
 
 body{
-    background-color: #141414;
+    background: url(../images/perfil-background.jpg) no-repeat;
+    background-position: left top;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 .box-text{
@@ -38,9 +42,14 @@ body{
 .box-text > h1{
     font-family: var(--font-title);
     font-size: 2em;
+    text-align: center;
 }
 
 .box-text > p{
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px;
     margin-top: 10px;
     font-size: 1.2em;
 }
@@ -96,7 +105,7 @@ a{
 }
 
 .curriculo:hover{
-    background-color: #223D7C;
+    background-color: #12234A;
 }
 
 
@@ -105,7 +114,8 @@ strong{
 }
 
 img{
-    border: 2px solid white;
+    border: 4px solid transparent;
+    background: linear-gradient(#5981B1, #223D7C, #12234A) padding-box, linear-gradient(260deg, #cdd4e9, #cdd4e9, #223D7C) border-box;
     max-width: 60%;
     border-radius: 50%;
     display: block;
@@ -130,8 +140,10 @@ img{
 
     body{
         background: url(../images/perfil-background.jpg) no-repeat;
-        background-position: center right;
+        background-position: left top;
+        background-size: cover;
         height: 100vh;
+        width: 100vw;
     }
 
     section{
@@ -157,6 +169,19 @@ img{
         display: flex;
         flex-direction: column;
         justify-content: start ;
+    }
+
+    .box-text > h1{
+        font-family: var(--font-title);
+        font-size: 2em;
+        text-align: unset;
+    }
+
+    .box-text > p{
+        padding: unset;
+        text-align: unset;
+        border: unset;
+        backdrop-filter: unset;
     }
     
     .btn{
