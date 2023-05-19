@@ -45,7 +45,7 @@ body{
 .box-text > p{
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 2px solid white;
+    
     padding: 20px;
     margin-top: 10px;
     font-size: 1.2em;
