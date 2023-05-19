@@ -30,6 +30,7 @@ body{
     background: url(../images/perfil-background.jpg) no-repeat;
     background-position: left top;
     height: 100%;
+    overflow-y: hidden;
 }
 
 .box-text{
@@ -57,7 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+       
 }
 
 a{
@@ -108,7 +109,7 @@ a{
 
 
 strong{
-    color: #5981B1;
+    color: red;
 }
 
 img{
