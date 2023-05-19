@@ -63,12 +63,12 @@ a{
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
-    width: 110px;
+    width: 150px;
     background-color: #223D7C;
     border: none;
     color: white;
     border: 2px solid white;
-    transition: .3s;
+    transition: .4s;
     cursor: pointer;
     color: white;
     font-family: var(--links);
@@ -84,12 +84,12 @@ a{
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
-    width: 110px;
+    width: 150px;
     background-color: transparent;
     border: none;
     color: white;
     border: 2px solid white;
-    transition: .3s;
+    transition: .4s;
     cursor: pointer;
     font-family: var(--links);
     font-size: 1.1em;
@@ -175,12 +175,10 @@ img{
         display: none;
     }
  
-
     #image-desktop{
         display: block;
         border: 3px solid;
-        border-color:#5981B1 #5981B1 #223D7C;
-        box-shadow: 0 0 15px #5981B1;
+        border-color: #5981B1 ;
         width: 100%;
         margin-top: 10px;
     }
