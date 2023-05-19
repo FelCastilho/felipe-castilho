@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+
+:root{
+    --text:  'Saira', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text);
+}
+
+body{
+    background: url(images/default.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    margin: auto;
+    position: relative;
+
+}
+
+
+/*Abas que seram setadas dentro do JS*/
+.morning{
+    background: url(images/morning.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+.afternoon{
+    background: url(images/afternoon.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+.night{
+    background: url(images/night.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+section{
+    text-align: center;
+    position: absolute;
+    backdrop-filter: blur(15px); /*Aplicando o efeito de blur*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 75%;
+    height: 60%;
+    padding: 20px;
+
+    box-shadow: 0 0 15px white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Icone*/
+img{
+    width: 20%;
+}
+
+/*Horário*/
+.hour-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #1414146e;
+}
+
+/*Dia do mês*/
+.data{
+
+}
+
+/*Dia da semana*/
+.week-text{
+}
+
+.box-datas{
+    display: flex;
+    flex-direction: row;
+}
+
+/**/
+
+
+/*Telas grandes*/
+@media screen and (min-width: 998px){
+    section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 70%;
+    }
+}

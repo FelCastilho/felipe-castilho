@@ -23,13 +23,13 @@
 
     <header id="header">
 
-        <h1>Felipe Castilho</h1>
+        <h1><a href="index.html">Felipe Castilho</a></h1>
         
         <nav id="nav">
     
             <button id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu" aria-expanded="false">
     
-                <span id="hamburguer"></span>
+            <span id="hamburguer"></span>
             </button>
     
             <ul id="menu" role="menu">
@@ -57,7 +57,7 @@
                 <figcaption class="card-3d">
                     <div class="telas">
                         <a href="pags/pags.html">
-                            <img id="pages" src="images/projects.png" alt="tela de páginas em HMTL">
+                            <img id="pages" src="images/portfolio-images/Capas - HTML/paginas-htmlcss-capa.png" alt="tela de páginas em HMTL">
                         </a>
                     </div>
                 </figcaption>
@@ -66,15 +66,37 @@
                 <figcaption class="card-3d">
                     <div class="telas">
                         <a href="forms/forms.html">
-                            <img id="tela-login" src="images/formularios.png" alt="tela de formulários">
+                            <img id="tela-login" src="images/portfolio-images/Capas - HTML/formularios-capa.png" alt="tela de formulários">
                         </a>
                     </div>
                 </figcaption>
 
             </div>
 
-          
+            <div class="main-title">
+                <h1>Javascript</h1>
+            </div>
+
+            <div class="dev-web">
+                <div class="cards">
+    
+                    <!--Projeto relógio-->
+                    <figcaption class="card-3d">
+                        <div class="telas">
+                            <a href="projetos-js/Relogio/clock.html">
+                                <img id="relogio-js" src="images/portfolio-images/Capas- Javascript/relogio-real-capa.png" alt="">
+                            </a>
+                        </div>
+                    </figcaption>
+
+                </div>
+                
+            </div>     
+         
         </section>
+
+    </div>
+
     </main>
 
     <script src="scripts/mobile-menu.js"></script>
@@ -93,6 +115,11 @@
        sr.reveal('#tela-login', {
         rotate: {x:0 , y: 0, z: 0},
         duration: 3500,
+       })
+
+       sr.reveal('#relogio-js',{
+        rotate: {x:0 , y: 0, z: 0},
+        duration: 4500
        })
     
     </script>
